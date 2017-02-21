@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Tpc
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
@@ -35,4 +35,4 @@ To get more help on the `angular-cli` use `ng help` or go check out the [Angular
 
 Install npm
 Install https://cli.angular.io
->>>>>>> 5151208ff5aa36543f8d0a9376b9625a24276b25
+This is my test
