@@ -6,7 +6,7 @@ import { MaterialModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { RouterModule } from "@angular/router";
 import { DEMO_APP_ROUTES } from "./routes";
-
+import 'hammerjs';
 @NgModule({
   declarations: [
     AppComponent
