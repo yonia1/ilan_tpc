@@ -11,16 +11,11 @@ import { Component, ElementRef, ViewEncapsulation } from '@angular/core';
 
 export class AppComponent {
     navItems = [
-        {name: 'Autocomplete', route: 'autocomplete'},
-        {name: 'Button', route: 'button'},
-        {name: 'Button Toggle', route: 'button-toggle'},
-        {name: 'Card', route: 'card'},
-        {name: 'Chips', route: 'chips'},
-        {name: 'Checkbox', route: 'checkbox'},
-        {name: 'Dialog', route: 'dialog'},
-        {name: 'Gestures', route: 'gestures'},
-        {name: 'Grid List', route: 'grid-list'},
-        {name: 'Icon', route: 'icon'}
+        {name: 'Start race', route: 'autocomplete'},
+        {name: 'Build plan', route: 'button'},
+        {name: 'What is tpc', route: 'button-toggle'},
+        {name: 'Who is Ilan', route: 'card'},
+
 
     ];
 
