@@ -4,7 +4,7 @@ import { Component, ElementRef, ViewEncapsulation } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],encapsulation: ViewEncapsulation.None,
+  styleUrls: ['./app.component.scss'],encapsulation: ViewEncapsulation.None,
 
 
 })
@@ -20,28 +20,8 @@ export class AppComponent {
         {name: 'Dialog', route: 'dialog'},
         {name: 'Gestures', route: 'gestures'},
         {name: 'Grid List', route: 'grid-list'},
-        {name: 'Icon', route: 'icon'},
-        {name: 'Input', route: 'input'},
-        {name: 'List', route: 'list'},
-        {name: 'Menu', route: 'menu'},
-        {name: 'Live Announcer', route: 'live-announcer'},
-        {name: 'Overlay', route: 'overlay'},
-        {name: 'Portal', route: 'portal'},
-        {name: 'Projection', route: 'projection'},
-        {name: 'Progress Bar', route: 'progress-bar'},
-        {name: 'Progress Spinner', route: 'progress-spinner'},
-        {name: 'Radio', route: 'radio'},
-        {name: 'Ripple', route: 'ripple'},
-        {name: 'Select', route: 'select'},
-        {name: 'Sidenav', route: 'sidenav'},
-        {name: 'Slider', route: 'slider'},
-        {name: 'Slide Toggle', route: 'slide-toggle'},
-        {name: 'Snack Bar', route: 'snack-bar'},
-        {name: 'Tabs', route: 'tabs'},
-        {name: 'Toolbar', route: 'toolbar'},
-        {name: 'Tooltip', route: 'tooltip'},
-        {name: 'Platform', route: 'platform'},
-        {name: 'Style', route: 'style'}
+        {name: 'Icon', route: 'icon'}
+
     ];
 
     constructor(private _element: ElementRef) {

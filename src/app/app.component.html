@@ -1,1 +1,59 @@
-This is main page
+<md-sidenav-container class="demo-root" fullscreen>
+    <md-sidenav #start>
+        <md-nav-list>
+            <a *ngFor="let navItem of navItems"
+               md-list-item
+               (click)="start.close()"
+               [routerLink]="[navItem.route]">
+                {{navItem.name}}
+            </a>
+
+            <hr>
+
+            <a md-list-item
+               (click)="start.close()"
+               [routerLink]="['baseline']">
+                Baseline
+            </a>
+        </md-nav-list>
+        <button md-button (click)="start.close()">CLOSE</button>
+    </md-sidenav>
+    <div>
+        <md-toolbar color="primary">
+            <button md-icon-button (click)="start.open()">
+                <md-icon class="md-24" >menu</md-icon>
+            </button>
+            <div class="demo-toolbar">
+                <h1 class="demo-toolbar">Ilan TPC</h1>
+
+            </div>
+
+
+                <span class="example-spacer"></span>
+                <md-icon class="example-icon">favorite</md-icon>
+                <md-icon class="example-icon">delete</md-icon>
+
+        </md-toolbar>
+
+        <div #root="$implicit" dir="ltr" class="content">
+
+                Content goes here<br>
+                Content goes here<br>
+                Content goes here<br>
+                Content goes here<br>
+                Content goes here<br>
+                Content goes here<br>
+                Content goes here<br>
+                Content goes here<br>
+                Content goes here<br>
+                Content goes here<br>
+                Content goes here<br>
+                Content goes here<br>
+
+        </div>
+
+
+    </div>
+
+</md-sidenav-container>
+
