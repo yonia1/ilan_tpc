@@ -9,6 +9,7 @@ import { DEMO_APP_ROUTES } from "./routes";
 import 'hammerjs';
 import { UserDetailsComponent } from './user/user-details/user-details.component';
 import { PlanComponent } from './user/plan/plan.component';
+import { FlexLayoutModule } from "@angular/flex-layout";
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +21,7 @@ import { PlanComponent } from './user/plan/plan.component';
     BrowserModule,
     FormsModule,
     HttpModule,
+    FlexLayoutModule.forRoot(),
     MaterialModule.forRoot()
   ],
   providers: [],
