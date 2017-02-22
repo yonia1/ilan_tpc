@@ -7,9 +7,13 @@ import { AppComponent } from './app.component';
 import { RouterModule } from "@angular/router";
 import { DEMO_APP_ROUTES } from "./routes";
 import 'hammerjs';
+import { UserDetailsComponent } from './user/user-details/user-details.component';
+import { PlanComponent } from './user/plan/plan.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UserDetailsComponent,
+    PlanComponent
   ],
   imports: [
     RouterModule.forRoot(DEMO_APP_ROUTES),
@@ -19,6 +23,8 @@ import 'hammerjs';
     MaterialModule.forRoot()
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent
+
+  ]
 })
 export class AppModule { }
