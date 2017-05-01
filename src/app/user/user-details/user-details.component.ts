@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserDetailsComponent implements OnInit {
 
+  protected showRace = true;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public toggle(): void {
+    this.showRace = !this.showRace;
+    console.log(this.showRace);
   }
 
 }

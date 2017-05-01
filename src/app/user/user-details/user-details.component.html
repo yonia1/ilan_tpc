@@ -1,49 +1,74 @@
-<form class="example-form">
-  <md-input-container class="example-full-width">
-    <input mdInput placeholder="Race date " type="date">
+<div fxLayout="row" fxLayoutAlign="center center">
+  <form class="race-form">
+    <div *ngIf="showRace" fxLayout="column" fxLayoutAlign="space-around stretch">
+      <h2 class="header">Race details</h2>
+      <md-input-container>
+        <input mdInput placeholder="Race date " type="date">
 
-  </md-input-container>
-  <md-input-container class="example-full-width">
-
-    <input mdInput placeholder="Race distance " type="text">
-  </md-input-container>
-  <md-input-container class="example-full-width">
-
-    <input mdInput placeholder="Time target" type="time">
-  </md-input-container>
+      </md-input-container>
+      <md-select placeholder="Choose distance">
+        <md-option value="'Marathon">Marathon</md-option>
+        <md-option value="'Half-Marathon">Half-Marathon</md-option>
+        <md-option value="'10 KM">10 KM</md-option>
+      </md-select>
 
 
+      <md-input-container class="example-full-width">
 
-  <p>
-    <md-input-container class="example-full-width">
-      <input mdInput placeholder="Age" type="text">
-    </md-input-container>
-    <md-input-container class="example-full-width">
-      <input mdInput placeholder="Weight" type="text">
-    </md-input-container>
-    <md-select placeholder="Shape level">
-      <md-option>
-        Athlete
-      </md-option>
-      <md-option>
-        Good shape
-      </md-option>
-      <md-option>
-        Advanced runner
-      </md-option>
-    </md-select>
-  </p>
+        <input mdInput placeholder="Time target" type="time">
+      </md-input-container>
+      <div fxLayout="row" fxLayoutAlign="center center">
+        <button (click)="toggle()" md-fab>
+          <md-icon >arrow_forward</md-icon>
+        </button>
+      </div>
+    </div>
+    <div *ngIf="!showRace" fxLayout="column" fxLayoutAlign="space-around stretch">
+      <h2 class="header">User details</h2>
 
-  <p>
-    <md-input-container class="example-full-width">
-      <input mdInput placeholder="Latest Race distance" type="text">
-    </md-input-container>
-    <md-input-container class="example-full-width">
-      <input mdInput placeholder="Latest Race result" type="text">
-    </md-input-container>
+      <md-select placeholder="Age">
+        <md-option value="'-20'"> -20 </md-option>
+        <md-option value="'20-30'">20-30 </md-option>
+        <md-option value="'30-35'">30-35 </md-option>
 
-  </p>
-  <button md-fab><md-icon>check</md-icon></button>
-  <button md-fab><md-icon>clear</md-icon></button>
+      </md-select>
+      <md-input-container class="example-full-width">
+        <input mdInput placeholder="Weight" type="text">
+      </md-input-container>
+      <md-select placeholder="Shape level">
+        <md-option>
+          Athlete
+        </md-option>
+        <md-option>
+          Good shape
+        </md-option>
+        <md-option>
+          Advanced runner
+        </md-option>
+      </md-select>
 
-</form>
+
+      <p>
+        <md-input-container class="example-full-width">
+          <input mdInput placeholder="Latest Race distance" type="text">
+        </md-input-container>
+        <md-input-container class="example-full-width">
+          <input mdInput placeholder="Latest Race result" type="text">
+        </md-input-container>
+
+      </p>
+      <div fxLayout="row" fxLayoutAlign="space-around stretch">
+        <button md-fab (click)="toggle()" >
+          <md-icon>arrow_back
+          </md-icon>
+        </button>
+        <button md-fab>
+          <md-icon>check</md-icon>
+        </button>
+
+
+      </div>
+
+    </div>
+  </form>
+</div>
