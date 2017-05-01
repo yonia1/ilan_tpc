@@ -11,6 +11,7 @@ import { UserDetailsComponent } from './user/user-details/user-details.component
 import { PlanComponent } from './user/plan/plan.component';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { WeeklyPlanService } from './api/rest-services/weekly-plan-service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     MaterialModule.forRoot()
   ],
-  providers: [],
+  providers: [WeeklyPlanService],
   bootstrap: [AppComponent
 
   ]
