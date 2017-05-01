@@ -1,3 +1,6 @@
-/**
- * Created by yamishav on 01/05/2017.
- */
+import { WorkOut } from './workout';
+
+export class WeeklyPlan {
+  weekly_total: number;
+  workouts: WorkOut[]
+}

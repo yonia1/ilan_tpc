@@ -10,6 +10,7 @@ import 'hammerjs';
 import { UserDetailsComponent } from './user/user-details/user-details.component';
 import { PlanComponent } from './user/plan/plan.component';
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     BrowserModule,
     FormsModule,
     HttpModule,
-    FlexLayoutModule.forRoot(),
+    FlexLayoutModule,
+    BrowserAnimationsModule,
     MaterialModule.forRoot()
   ],
   providers: [],

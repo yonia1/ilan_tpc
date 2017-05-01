@@ -1,3 +1,5 @@
-/**
- * Created by yamishav on 01/05/2017.
- */
+import { WeeklyPlan } from './weekly-plan';
+
+export class WeeklyPlanList {
+  weekly_plan_list: WeeklyPlan[]
+}
