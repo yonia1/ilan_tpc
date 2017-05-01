@@ -1,10 +1,10 @@
 export class WorkOut {
-  weekday: string; // todo(Elan) change to type or enum
+  weekday: string; // todo Changed the returned value to String
   length: number;
-  type: string; // todo(elan) change to type or enum
+  type: string; // todo Changed the returned value to String
   description: string;
   duration: number
-  intensity: string; // todo(elan) change to type or enum
+  intensity: string; // todo Changed the returned value to String
 }
 
 
